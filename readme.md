@@ -6,18 +6,20 @@ A robust end‑to‑end Python pipeline that predicts passenger no‑shows for f
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Model Details](#model-details)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Flight No-Show Prediction Pipeline](#flight-no-show-prediction-pipeline)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Architecture](#architecture)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Usage](#usage)
+  - [Project Structure](#project-structure)
+  - [Model Details](#model-details)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
 ---
 
@@ -124,15 +126,17 @@ Check logs for summary of processed rows and any errors.
 ## Project Structure
 
 ```
-flight-no-show-prediction/
-├── data/                      # Sample CSV exports (optional)
-├── models/                    # Serialized model artifacts
-│   └── rf_pipeline.pkl        # Pre‑trained RandomForest pipeline
-├── requirements.txt           # Python dependencies
-├── predict_noshow_update_db.py# Main ETL + inference script
-├── utils.py                   # Helper functions (db, logging)
-├── README.md                  # Project documentation
-└── .gitignore                 # Exclusions
+FlightPassengerNoShowPrediction/
+├── .gitignore                          # Files and folders to ignore
+├── updated_flights.csv                 # Sample CSV export of raw booking and flight data
+├── rf_pipeline.pkl                     # Serialized RandomForest pipeline
+├── my_sql_db.py                        # Database connection and helper functions
+├── predict_noshow_update_db.py         # Main ETL + inference script
+├── ETL_script_updated_flights.ipynb    # Jupyter notebook for raw data ETL and exploration
+├── RF_PassengerPrediction.ipynb        # Jupyter notebook for feature engineering and pipeline development
+├── requirements.txt                    # Python dependencies
+├── LICENSE                             # Project license
+└── README.md                           # Project documentation
 ```
 
 ---
@@ -145,7 +149,6 @@ flight-no-show-prediction/
   - Flight attributes (route, distance, fare class)
   - Temporal flags (weekend, peak season, public holiday)
 - **Performance:**
-  - ROC‑AUC: 0.92 on validation set
   - Precision/Recall optimized for detecting likely no‑shows
 
 To retrain, see `model_training.ipynb` (not included).
@@ -166,7 +169,8 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## Contact
 
-- **Author:** Angel Pang
-- **Email:** [angel.pang@example.com](mailto\:angel.pang@example.com)
-- **GitHub:** [github.com/angelpang](https://github.com/angelpang)
+- **Author:** Angel Pang Siang Lian
+- **Email:** [angelpsl@ymail.com](mailto\:angelpsl@ymail.com)
+- **LinkedIn:** [linkedin.com/in/pangsianglian](https://www.linkedin.com/in/pangsianglian/)
+- **GitHub:** [github.com/pangsianglian](https://github.com/pangsianglian)
 
