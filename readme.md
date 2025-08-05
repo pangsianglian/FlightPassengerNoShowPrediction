@@ -72,8 +72,8 @@ flowchart LR
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/<your-username>/flight-no-show-prediction.git
-   cd flight-no-show-prediction
+   git clone https://github.com/pangsianglian/FlightPassengerNoShowPrediction.git
+   cd FlightPassengerNoShowPrediction
    ```
 2. Create a virtual environment and install dependencies:
    ```bash
@@ -93,7 +93,7 @@ Set up your database credentials:
 ```bash
 export DB_HOST=localhost
 export DB_PORT=3306
-export DB_NAME=flightdb
+export DB_NAME=skylance
 export DB_USER=root
 export DB_PASSWORD="<your_password>"
 ```
