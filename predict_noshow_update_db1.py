@@ -17,8 +17,6 @@ from sqlalchemy.orm import sessionmaker
 
 # Purpose: ETL + ML + write-back
 
-os.environ["DB_PASSWORD"] = "Nail1925$$"
-
 # 1) Load your DB password from the environment
 pwd = os.getenv("DB_PASSWORD")
 if not pwd:
